@@ -7,9 +7,9 @@
  * @author		Solspace DevTeam
  * @copyright	Copyright (c) 2008-2012, Solspace, Inc.
  * @link		http://solspace.com/docs/addon/c/Freeform/
- * @version		4.0.7
+ * @version		4.1.3
  * @filesource 	./system/expressionengine/third_party/freeform/language/pt-br/
- * @translated to brazilian portuguese by MarchiMedia® 
+ * @translated to brazilian portuguese by MarchiMedia®. Update for cleitonwebs - cleiton.webs@gmail.com 
  */
 
 $lang = array(
@@ -21,15 +21,12 @@ $lang = array(
 // Necessário para a página MÓDULOS
 //----------------------------------------
 
-/*%non_pro%
+
 "freeform_module_name" =>
 "Freeform",
-//%/non_pro%*/
 
-//%pro%
-"freeform_module_name" =>
-"Freeform Pro",
-//%/pro%
+
+
 
 'go_pro' =>
 "Obter versão Pro!",
@@ -50,6 +47,16 @@ $lang = array(
 "Padrão",
 
 // -------------------------------------
+//	accessory
+// -------------------------------------
+
+'freeform_accessory_description' =>
+"Entradas recentes e nomes curtos para campos ligados a formulários.",
+
+'freeform_form_info' =>
+"Form Info",
+
+// -------------------------------------
 //	Linguagem da versão básica
 // -------------------------------------
 
@@ -65,6 +72,15 @@ $lang = array(
 
 'choose_composer_form' =>
 "Escolha um Formulário  Freeform Composer para a saída:",
+
+'toggle_field_short_names' =>
+"Alternar nomes curtos do campo",
+
+'show' =>
+"Mostrar",
+
+'hide' =>
+"Ocultar",
 
 //----------------------------------------
 //  Menu Principal
@@ -165,6 +181,9 @@ $lang = array(
 'notice' =>
 "Aviso",
 
+'view_lower' =>
+"ver",
+
 // -------------------------------------
 //	status dos formulários
 // -------------------------------------
@@ -205,6 +224,9 @@ $lang = array(
 
 'submissions' =>
 "Envios",
+
+'pending_submissions' =>
+"Envios Pendentes",
 
 'moderate' =>
 "Moderar",
@@ -397,6 +419,9 @@ $lang = array(
 'submit_button'=>
 "Botão Enviar",
 
+'submit_previous_button'=>
+"Submit Previous Button",
+
 'search_fields'=>
 "Campos da Busca",
 
@@ -408,6 +433,9 @@ $lang = array(
 
 'captcha' =>
 "Captcha",
+
+'sticky_controls' =>
+"Sticky Controls",
 
 'double_click_to_edit' =>
 "Duplo-Clique para Editar",
@@ -536,6 +564,12 @@ $lang = array(
 
 'submit' =>
 "Enviar",
+
+'submit_previous' =>
+"Envios Anteriore",
+
+'previous' =>
+"Anterior",
 
 'view' =>
 "Ver",
@@ -708,6 +742,9 @@ $lang = array(
 
 'all_fields' =>
 "Todos os Campos",
+
+'format_dates' =>
+"Format&nbsp;Dates",
 
 // -------------------------------------
 //	linhas multi-item para os campos
@@ -998,6 +1035,12 @@ $lang = array(
 
 'filename' =>
 'Nome de arquivo',
+
+'download' =>
+'Download',
+
+'front_end_link' =>
+'Front End Link',
 
 'file_location' =>
 'Local do arquivo',
@@ -1645,6 +1688,18 @@ Aqui estão os detalhes:
 'cp_date_formatting_desc' =>
 "Configuração geral de formatação de data para itens no Painel de Controle do Freeform. Veja <a href='http://php.net/manual/en/function.date.php#refsect1-function.date-parameters' target='_blank'>Manual de Formatação de DAta no PHP</a> para visualizar as opções disponíveis.",
 
+'hook_data_protection' =>
+"Proteção de Dados de Gancho",
+
+'hook_data_protection_desc' =>
+"Às vezes, plugins ou extensões personalizadas usando ganchos do Freeform podem esquecer ou mal formar dados necessários. Isto pode causar ao Freeform um comportamentos misteriosos. Com isso permitido, o Freeform irá verificar a integridade dos dados ao chamar ganchos e usar dados de backup se os dados de entrada da extensão são mal formados.<br/><br/><span class='ss_notice'>Somente desative isso se você está tendo problemas com extensões para o funcionamento de Freeform.</span>",
+
+'disable_missing_submit_warning' =>
+"Desativar Aviso de Falta de Botão de Envio",
+
+'disable_missing_submit_warning_desc' =>
+"Quando um botão de envio está faltando no Composer, um aviso será exibido deixando-o saber que é possível continuar ou voltar e adicionar um botão de envio antes do envio. Esta configuração permite que você desabilite o aviso.",
+
 // -------------------------------------
 //	preferências gerais
 // -------------------------------------
@@ -1686,6 +1741,9 @@ Aqui estão os detalhes:
 //----------------------------------------
 //  Erros
 //----------------------------------------
+
+'missing_post_data' =>
+"Falta variável de POST válida requerida",
 
 'call_to_undefined_method' =>
 "Erro Fatal: Chamada para um método indefinido %class%::%method%()",
@@ -1759,6 +1817,9 @@ Aqui estão os detalhes:
 
 'invalid_notification_id' =>
 "Id inválido da notificação foi fornecido.",
+
+'invalid_composer_data' =>
+"Invalid Composer Data Submitted.",
 
 'non_valid_email' =>
 "%email% não é um e-mail válido.",
@@ -1895,7 +1956,8 @@ Aqui estão os detalhes:
 "Solicitação inválida",
 
 'freeform_module_disabled' =>
-"O módulo  Freeform está desativado no momento. Por favor tenha certeza que o mesmo está instalado e atualizado indo no painel de controle do ExpressionEngine",
+"O módulo  Freeform está desativado no momento. Por favor tenha certeza que o mesmo está instalado e atualizado indo 
+no painel de controle do ExpressionEngine",
 
 'disable_module_to_disable_extension' =>
 "Para desativar esta extensão, você deve desativar seu <a href='%url%'>módulo</a>. correspondente",
@@ -1995,6 +2057,7 @@ Aqui estão os detalhes:
 
 // -------------------------------------
 //	Lista de estados, países e províncias
+//
 // -------------------------------------
 
 'list_of_us_states' => "
